@@ -93,6 +93,7 @@ Animations were drawn myself, The "Clair De Lune" and "Comptine d'un autre été
 ### Dependencies
 
 * Windows or Linux
+* Mac 
 * SFML (Simple and Fast Multi-Media Library) 2.5.1 or later. However, I have set everything up already for your convenience. You will not be required to download/link any libraries. The downside is that the download is ~30 MB more.
 * GCC 7.3.0 MinGW (32 bit) or later. If you want to use 64 bit version of GCC, download the SFML GCC 64-bit version from https://www.sfml-dev.org/download/sfml/2.5.1/ then simply replace the `include` and `lib` files in `sfmlFiles` with the `include` and `library` files you just downloaded. Then delete and replace the current .dlls with the .dll files in the `bin` folder you just downloaded.
 * GNU Make
@@ -111,6 +112,14 @@ Animations were drawn myself, The "Clair De Lune" and "Comptine d'un autre été
   * Go to your default include path or `C_Cpp.default.includepath` and make sure the path is set to `["${workspaceFolder}**/"]`
   * Run `make` and `run` again and the program should execute
 
+**Mac:**
+* Download the source code from here, or copy the repository into your enviroment
+* brew install sfml and save the path where your sfml located 
+* change Makefile.osx and .vscode/c_cpp_properties.json to reflect the location of sfml
+* open with VSCODE
+  * run `make`
+  * open terminal, in your project root dir, run `bin/app` (this will correctly locate the resource files)
+  
 ## Authors
 
 Zachary Chi
